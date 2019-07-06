@@ -13,6 +13,7 @@ interface Link {
 export class NavbarComponent implements OnInit {
 
   public links: Link[] = [];
+  public title = 'miitch.io';
 
   constructor() { }
 
@@ -20,8 +21,13 @@ export class NavbarComponent implements OnInit {
     this.links = [
       {
         title: 'Home',
-        route: '/',
+        route: '',
         active: true
+      },
+      {
+        title: 'Projects',
+        route: '/projects',
+        active: false
       }
     ];
   }
