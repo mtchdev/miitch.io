@@ -1,7 +1,17 @@
-<app-navbar></app-navbar>
+<app-navbar *ngIf="isProd"></app-navbar>
 
-<div class="header">
+<div class="header" *ngIf="isProd">
     <div class="header__title">Hi, I'm <strong>Mitch</strong></div>
     <div class="header__caption">Full-stack web developer</div>
-    <button class="button-primary">Hey</button>
+    <div class="header__actions">
+        <button class="button-primary">View Projects</button>
+    </div>
+</div>
+
+<div class="header" *ngIf="!isProd">
+    <div class="header__title">Coming <strong>Soon</strong>!</div>
+    <div class="header__caption">Stay tuned or contribute</div>
+    <div class="header__actions">
+        <button class="button-primary" (click)="openRepo()">View on GitHub</button>
+    </div>
 </div>

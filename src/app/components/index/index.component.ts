@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './index.component.html',
 })
 export class IndexComponent implements OnInit {
+  public isProd = false;
 
   constructor() { }
 
   ngOnInit() {
 
+  }
+
+  openRepo(): void {
+    if (this.isProd) { return; }
+    window.location.href = 'https://github.com/spliitzx/miitch.io';
   }
 
 }
