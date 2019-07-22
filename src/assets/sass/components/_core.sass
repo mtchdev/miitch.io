@@ -1,6 +1,38 @@
+html, body
+	height: 100%
+	background-color: #190237
+	color: #ffffff
+
+strong
+	font-family: 'Dubai Regular'
+
 .container
 	margin-right: 180px
 	margin-left: 180px
 	&--is-flex
 		display: flex
 		flex-direction: row
+
+#background
+	position: fixed
+	left: 0
+	right: 0
+	z-index: 1
+
+	display: block
+	background-image: url("/assets/img/main.png")
+	height: 100%
+	width: 100%
+
+	opacity: 0.4
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	
+.content 
+	position: fixed
+	left: 0
+	right: 0
+	z-index: 9999
+	margin-left: 20px
+	margin-right: 20px
