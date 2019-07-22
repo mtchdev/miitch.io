@@ -1,17 +1,32 @@
 .navbar
-    margin-top: 30px
+	margin-top: 30px
+	display: flex
+	flex-direction: row
 
-    &__title
-        color: #ffffff
-        font-size: 3rem
-        transition: 0.2s
-        margin-right: 110px
-        font-family: 'Dubai Medium'
-        &:hover
-            color: darken(#ffffff, 10%)
-            cursor: pointer
+	&__title
+		color: #ffffff
+		font-size: 3rem
+		transition: 0.2s
+		margin-right: 110px
+		font-family: 'Dubai Medium'
+		user-select: none
+		&:hover
+			color: darken(#ffffff, 10%)
+			cursor: pointer
 
-    &__item
-        font-family: 'Dubai Light'
-        color: #ffffff
-        font-size: 2rem
+	&__items
+		padding-top: 15px
+
+	&__item
+		font-family: 'Dubai Light'
+		color: #ffffff
+		font-size: 2rem
+		margin-right: 40px
+		color: #CECECE
+		cursor: pointer
+		&:hover
+			color: darken(#CECECE, 20%)
+			transition: 0.2s
+
+		&--is-active
+			font-family: 'Dubai Medium'

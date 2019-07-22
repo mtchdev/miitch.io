@@ -1,18 +1,27 @@
-html
+html, body
 	height: 100%
+	background-color: #190237
 
-body
-	background: linear-gradient(90deg, #56c1de 0%, #45d2bf 100%)
-	background-size: cover
+#background
+	position: fixed
+	left: 0
+	right: 0
+	z-index: 1
+
+	display: block
+	background-image: url("/assets/img/main.png")
+	height: 100%
+	width: 100%
+
+	opacity: 0.4
 	background-position: center
 	background-repeat: no-repeat
-	color: white
-	user-select: none
-
-.header
-	margin-top: 10rem
-
-	&__title
-		color: #ffffff
-		font-size: 3rem
-		font-weight: bold
+	background-size: cover
+	
+.content 
+	position: fixed
+	left: 0
+	right: 0
+	z-index: 9999
+	margin-left: 20px
+	margin-right: 20px
