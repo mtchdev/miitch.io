@@ -2,8 +2,8 @@
     <div class="navbar">
         <span class="navbar__title">miitch.io</span>
         <div class="navbar__items">
-            <span class="navbar__item navbar__item--is-active">Home</span>
-            <span class="navbar__item">Projects</span>
+            <span class="navbar__item" routerLinkActive="navbar__item--is-active" [routerLink]="['/home']">Home</span>
+            <span class="navbar__item" routerLinkActive="navbar__item--is-active" [routerLink]="['/projects']">Projects</span>
             <span class="navbar__item">Experience</span>
             <span class="navbar__item">Contact</span>
         </div>
