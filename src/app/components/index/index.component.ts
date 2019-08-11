@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './index.component.html',
 })
 export class IndexComponent implements OnInit {
-  public isProd = false;
+  public isProd = true;
 
   constructor() { }
 
