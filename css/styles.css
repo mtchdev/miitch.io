@@ -1,0 +1,65 @@
+html,body{
+    margin:0;
+    padding:0;
+    font-family: monospace;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+    user-select: none;
+}
+
+@keyframes GradientBg {
+    0% {
+        background-position: 9% 0%;
+    }
+    
+    50% {
+        background-position: 92% 100%;
+    }
+    
+    100% {
+        background-position: 9% 0%;
+    }
+}
+
+body {
+    background: linear-gradient(140deg, #de1aff, #ffbf1e, #25f18d);
+    background-size: 600% 600%;
+    animation: GradientBg 49s ease infinite;;
+    min-height: 100vh;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+.content {
+    margin-top: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.links {
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.link {
+    width: 50px;
+    height: 50px;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+}
