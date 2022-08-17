@@ -32,6 +32,7 @@ body {
 }
 
 .content {
+    margin-top: 150px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -73,12 +74,3 @@ a {
     color: #ffffff;
     font-weight: bolder;
 }
-
-.center{
-    display:flex; 
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-
-.invert { filter: invert(100%); }
